@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using Utility;
 
 namespace DragDropPictureBox
 {
@@ -30,6 +31,11 @@ namespace DragDropPictureBox
         {
             Graphics = b;
             Location = p;
+        }
+
+        public LocationBitmap CloneDeep()
+        {
+            return Util.CloneDeep<LocationBitmap>(this);
         }
     }
 }

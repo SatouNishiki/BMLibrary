@@ -154,5 +154,6 @@ namespace DragDropPictureBox
                 Refresh();
             }
         }
+
     }
 }

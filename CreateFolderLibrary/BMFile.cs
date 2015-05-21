@@ -81,7 +81,7 @@ namespace BMFileLibrary
                 }
 
             }
-            return GetApplicationPass() + name;
+            return appPath + "\\" + name;
         }
 
         /// <summary>

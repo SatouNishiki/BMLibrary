@@ -13,7 +13,7 @@ namespace BMFileLibrary
     public class BMFile
     {
         //自分自身の実行ファイルのパスを取得する
-        private static string appPath = System.Windows.Forms.Application.StartupPath;
+        private static readonly string appPath = System.Windows.Forms.Application.StartupPath;
 
         //作成するディレクトリ
         private static string directory = appPath + "\\";
@@ -67,11 +67,11 @@ namespace BMFileLibrary
         public static string CreateFile(string name)
         {
             //なければ作る
-            if (!System.IO.File.Exists(GetApplicationPass() + "\\"+ name))
+            if (!System.IO.File.Exists(appPath + "\\"+ name))
             {
                 // hStream が破棄されることを保証するために using を使用する
                 // 指定したパスのファイルを作成する
-                using (System.IO.FileStream hStream = System.IO.File.Create(GetApplicationPass()+ "\\" + name))
+                using (System.IO.FileStream hStream = System.IO.File.Create(appPath + "\\" + name))
                 {
                     // 作成時に返される FileStream を利用して閉じる
                     if (hStream != null)

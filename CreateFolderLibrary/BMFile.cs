@@ -66,17 +66,21 @@ namespace BMFileLibrary
         /// <returns>ファイルの絶対パス</returns>
         public static string CreateFile(string name)
         {
-            // hStream が破棄されることを保証するために using を使用する
-            // 指定したパスのファイルを作成する
-            using (System.IO.FileStream hStream = System.IO.File.Create(name))
+            //なければ作る
+            if (!System.IO.File.Exists(name))
             {
-                // 作成時に返される FileStream を利用して閉じる
-                if (hStream != null)
+                // hStream が破棄されることを保証するために using を使用する
+                // 指定したパスのファイルを作成する
+                using (System.IO.FileStream hStream = System.IO.File.Create(name))
                 {
-                    hStream.Close();
+                    // 作成時に返される FileStream を利用して閉じる
+                    if (hStream != null)
+                    {
+                        hStream.Close();
+                    }
                 }
-            }
 
+            }
             return name;
         }
 

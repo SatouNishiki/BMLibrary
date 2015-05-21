@@ -67,7 +67,7 @@ namespace BMFileLibrary
         public static string CreateFile(string name)
         {
             //なければ作る
-            if (!System.IO.File.Exists(GetApplicationPass() + name))
+            if (!System.IO.File.Exists(GetApplicationPass() + "\\"+ name))
             {
                 // hStream が破棄されることを保証するために using を使用する
                 // 指定したパスのファイルを作成する

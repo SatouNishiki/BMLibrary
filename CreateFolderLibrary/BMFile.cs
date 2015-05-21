@@ -60,9 +60,9 @@ namespace BMFileLibrary
         }
 
         /// <summary>
-        /// 指定された絶対パスを持つファイルを作成する
+        /// 指定されたパスを持つファイルを作成する
         /// </summary>
-        /// <param name="name">作成するファイルの絶対パス</param>
+        /// <param name="name">作成するファイルの相対パス</param>
         /// <returns>ファイルの絶対パス</returns>
         public static string CreateFile(string name)
         {
@@ -81,7 +81,7 @@ namespace BMFileLibrary
                 }
 
             }
-            return name;
+            return GetApplicationPass() + name;
         }
 
         /// <summary>

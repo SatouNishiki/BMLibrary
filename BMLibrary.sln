@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragDropPictureBox", "DragD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeListBox", "ExchangeListBox\ExchangeListBox.csproj", "{023B3AC2-88FA-4E36-A799-145488651272}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCntrol", "CustomCntrol\CustomCntrol.csproj", "{C54F508A-C667-4062-980F-CAB34E4E1F6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{023B3AC2-88FA-4E36-A799-145488651272}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{023B3AC2-88FA-4E36-A799-145488651272}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{023B3AC2-88FA-4E36-A799-145488651272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54F508A-C667-4062-980F-CAB34E4E1F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54F508A-C667-4062-980F-CAB34E4E1F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54F508A-C667-4062-980F-CAB34E4E1F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54F508A-C667-4062-980F-CAB34E4E1F6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

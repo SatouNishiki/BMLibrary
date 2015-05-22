@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BMErrorLibrary">
-      <HintPath>..\DragDropPlayerList\bin\Debug\BMErrorLibrary.dll</HintPath>
+      <HintPath>..\BMErrorLibrary\bin\Debug\BMErrorLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

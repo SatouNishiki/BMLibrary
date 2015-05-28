@@ -146,8 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Picture\SampleButton.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Picture\SampleButton2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

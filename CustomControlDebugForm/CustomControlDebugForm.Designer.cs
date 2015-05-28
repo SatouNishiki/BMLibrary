@@ -87,15 +87,14 @@
             // 
             // customButton1
             // 
-            this.customButton1.DefaultImgPass = "CustomCntrol.Picture.SampleButton.png";
-            this.customButton1.Location = new System.Drawing.Point(165, 168);
-            this.customButton1.MouseDawnImgPass = "CustomCntrol.Picture.SampleButton2.png";
+            this.customButton1.DefaultImgPass = "CustomControlDebugForm.Picture.SampleButton.png";
+            this.customButton1.Location = new System.Drawing.Point(152, 123);
+            this.customButton1.MouseDawnImgPass = "CustomControlDebugForm.Picture.SampleButton2.png";
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(234, 100);
+            this.customButton1.Size = new System.Drawing.Size(288, 145);
             this.customButton1.TabIndex = 3;
             this.customButton1.Text = "customButton1";
             this.customButton1.UseVisualStyleBackColor = true;
-            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // CustomControlDebugForm
             // 

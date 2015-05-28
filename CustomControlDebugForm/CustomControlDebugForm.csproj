@@ -51,6 +51,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BMErrorLibrary\bin\Debug\BMErrorLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="CustomCntrol">
+      <HintPath>..\CustomCntrol\bin\Debug\CustomCntrol.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -98,10 +101,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CustomCntrol\CustomCntrol.csproj">
-      <Project>{C54F508A-C667-4062-980F-CAB34E4E1F6D}</Project>
-      <Name>CustomCntrol</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DragDropPictureBox\DragDropPictureBox.csproj">
       <Project>{D330F661-1B71-45A2-94DB-B55AFADBFB70}</Project>
       <Name>DragDropPictureBox</Name>

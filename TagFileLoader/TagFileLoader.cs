@@ -45,7 +45,7 @@ namespace TagFileLoader
             int startTagPoint = al.IndexOf(startTag);
             int endTagPoint = al.IndexOf(endTag);
 
-            for (int i = startTagPoint + 1; i < endTagPoint; i++)
+            for (var i = startTagPoint + 1; i < endTagPoint; i++)
             {
                 rt.Add(al[i]);
             }

@@ -33,7 +33,7 @@ namespace DragDropPictureBox
 
             Graphics g = pe.Graphics;
 
-            foreach (LocationBitmap l in LocationBitmapList)
+            foreach (var l in LocationBitmapList)
             {
                 g.DrawImage(l.Graphics, l.Location);
                
@@ -48,7 +48,6 @@ namespace DragDropPictureBox
                 }
             }
 
-          //  g.Dispose();
         }
 
         private void DragDropBox_MouseDown(object sender, MouseEventArgs e)
@@ -109,7 +108,7 @@ namespace DragDropPictureBox
 
         public LocationBitmap GetLocationBitmapFromPoint(Point p)
         {
-            foreach (LocationBitmap l in LocationBitmapList)
+            foreach (var l in LocationBitmapList)
             {
                 if(p.X >= l.Location.X && p.X <= l.Location.X + l.Graphics.Size.Width
                     && p.Y >= l.Location.Y && p.Y <= l.Location.Y + l.Graphics.Size.Height)

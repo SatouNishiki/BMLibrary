@@ -40,7 +40,7 @@ namespace ExchangeListBox
                 List<object> o1 = new List<object>();
                 List<object> o2= new List<object>();
 
-                for (int i = 0; i < this.SelectedItems.Count; i++)
+                for (var i = 0; i < this.SelectedItems.Count; i++)
                 {
                     listBox.Items.Add(this.SelectedItems[i]);
                     this.Items.Add(listBox.SelectedItems[i]);
@@ -49,12 +49,12 @@ namespace ExchangeListBox
                     o2.Add(listBox.SelectedItems[i]);
                 }
 
-                foreach (object o in o1)
+                foreach (var o in o1)
                 {
                     this.Items.Remove(o);
                 }
 
-                foreach (object o in o2)
+                foreach (var o in o2)
                 {
                     listBox.Items.Remove(o);
                 }

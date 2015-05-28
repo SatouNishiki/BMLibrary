@@ -19,14 +19,9 @@ namespace CustomControlDebugForm
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            exChangeList1.ExchangeSelectedItem(exChangeList2);
-        }
-
         private void customButton1_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text += "(´・ω・｀)らんらん♪\r\n";
         }
 
         

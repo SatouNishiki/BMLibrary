@@ -30,6 +30,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BMErrorLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BMErrorLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CreateFolderLibrary">
+      <HintPath>..\CreateFolderLibrary\bin\Debug\CreateFolderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomCntrol">
+      <HintPath>..\CustomCntrol\bin\Debug\CustomCntrol.dll</HintPath>
+    </Reference>
+    <Reference Include="DragDropList">
+      <HintPath>..\DragDropList\bin\Debug\DragDropList.dll</HintPath>
+    </Reference>
+    <Reference Include="DragDropPictureBox">
+      <HintPath>..\DragDropPictureBox\bin\Debug\DragDropPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="DragDropPlayerList">
+      <HintPath>..\DragDropPlayerList\bin\Debug\DragDropPlayerList.dll</HintPath>
+    </Reference>
+    <Reference Include="ExchangeListBox">
+      <HintPath>..\ExchangeListBox\bin\Debug\ExchangeListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Mathmatical">
+      <HintPath>..\Mathmatical\bin\Debug\Mathmatical.dll</HintPath>
+    </Reference>
+    <Reference Include="QuarterTimer">
+      <HintPath>..\QuarterTimer\bin\Debug\QuarterTimer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -38,10 +66,19 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TagFileLoader">
+      <HintPath>..\TagFileLoader\bin\Debug\TagFileLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Utility">
+      <HintPath>..\Utility\bin\Debug\Utility.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BMError.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

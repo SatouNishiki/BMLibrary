@@ -82,6 +82,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -97,6 +98,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomCntrol\CustomCntrol.csproj">
+      <Project>{C54F508A-C667-4062-980F-CAB34E4E1F6D}</Project>
+      <Name>CustomCntrol</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DragDropPictureBox\DragDropPictureBox.csproj">
       <Project>{D330F661-1B71-45A2-94DB-B55AFADBFB70}</Project>
       <Name>DragDropPictureBox</Name>
@@ -136,6 +141,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SampleButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Picture\SampleButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Picture\SampleButton2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -23,6 +23,12 @@ namespace CustomControlDebugForm
         {
             exChangeList1.ExchangeSelectedItem(exChangeList2);
         }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }

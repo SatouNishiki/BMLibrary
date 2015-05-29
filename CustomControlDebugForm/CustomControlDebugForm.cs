@@ -19,9 +19,9 @@ namespace CustomControlDebugForm
 
         }
 
-        private void customButton1_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            textBox1.Text += "(´・ω・｀)らんらん♪\r\n";
+            textBox1.Text = customButton1.Text;
         }
 
         

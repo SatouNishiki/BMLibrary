@@ -57,6 +57,7 @@ namespace CustomCntrol
                 }
                 catch (Exception ex)
                 {
+                    BMErrorLibrary.BMError.ErrorMessageOutput(ex.Message);
                 }
             }
             else
@@ -70,6 +71,8 @@ namespace CustomCntrol
                 }
                 catch (Exception ex)
                 {
+
+                    BMErrorLibrary.BMError.ErrorMessageOutput(ex.Message);
                 }
             }
         }
@@ -78,12 +81,15 @@ namespace CustomCntrol
         {
             base.OnMouseDown(mevent);
             isMouseDown = true;
+            this.Text = "dpwm";
+            this.Refresh();
         }
-
+        
         protected override void OnMouseUp(MouseEventArgs mevent)
         {
             base.OnMouseUp(mevent);
             isMouseDown = false;
+            this.Text = "up";
             this.Refresh();
         }
     }

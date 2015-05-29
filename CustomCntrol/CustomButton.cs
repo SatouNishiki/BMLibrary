@@ -33,7 +33,7 @@ namespace CustomCntrol
         Category("表示"),
         Description("クリックされているときのボタンイメージの実行アセンブリからの相対パスです。")
         ]
-        public string MouseDawnImgPass { get; set; }
+        public string MouseDownImgPass { get; set; }
 
 
         public CustomButton()
@@ -50,8 +50,7 @@ namespace CustomCntrol
             {
                 try
                 {
-                    img = new Bitmap(myAssembly.GetManifestResourceStream
-                            (DefaultImgPass));
+                    img = new Bitmap(Application.StartupPath + DefaultImgPass);
 
                     pe.Graphics.DrawImage(img, 0, 0, this.Width, this.Height);
                     pe.Dispose();
@@ -65,8 +64,7 @@ namespace CustomCntrol
             {
                 try
                 {
-                    img = new Bitmap(myAssembly.GetManifestResourceStream
-                            (MouseDawnImgPass));
+                    img = new Bitmap(Application.StartupPath +MouseDownImgPass);
 
                     pe.Graphics.DrawImage(img, 0, 0, this.Width, this.Height);
                     pe.Dispose();

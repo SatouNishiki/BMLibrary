@@ -50,9 +50,9 @@
             // 
             // customButton1
             // 
-            this.customButton1.DefaultImgPass = "CustomCntrol.Picture.SampleButton.png";
+            this.customButton1.DefaultImgPass = "Picture\\SampleButton.png";
             this.customButton1.Location = new System.Drawing.Point(13, 93);
-            this.customButton1.MouseDawnImgPass = "CustomCntrol.Picture.SampleButton2.png";
+            this.customButton1.MouseDownImgPass = "Picture\\SampleButton2.png";
             this.customButton1.Name = "customButton1";
             this.customButton1.Size = new System.Drawing.Size(277, 175);
             this.customButton1.TabIndex = 3;

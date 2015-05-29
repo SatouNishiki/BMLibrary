@@ -62,7 +62,7 @@
             // 
             // CustomControlDebugForm
             // 
-            this.ClientSize = new System.Drawing.Size(302, 280);
+            this.ClientSize = new System.Drawing.Size(309, 280);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.customButton1);
             this.Name = "CustomControlDebugForm";

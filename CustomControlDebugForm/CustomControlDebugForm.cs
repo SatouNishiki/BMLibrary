@@ -21,13 +21,12 @@ namespace CustomControlDebugForm
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            textBox1.Text = customButton1.Text;
+            //textBox1.Text = customButton1.Text;
         }
 
-        private void customButton1_MouseDown(object sender, MouseEventArgs e)
+        private void customButton1_Click(object sender, EventArgs e)
         {
-
-
+            textBox1.Text += "(´・ω・`)らんらん♪\r\n";
         }
 
         

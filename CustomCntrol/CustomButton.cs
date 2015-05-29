@@ -54,6 +54,7 @@ namespace CustomCntrol
                             (DefaultImgPass));
 
                     pe.Graphics.DrawImage(img, 0, 0, this.Width, this.Height);
+                    pe.Dispose();
                 }
                 catch (Exception ex)
                 {
@@ -68,6 +69,7 @@ namespace CustomCntrol
                             (MouseDawnImgPass));
 
                     pe.Graphics.DrawImage(img, 0, 0, this.Width, this.Height);
+                    pe.Dispose();
                 }
                 catch (Exception ex)
                 {
@@ -81,18 +83,12 @@ namespace CustomCntrol
         {
             base.OnMouseDown(mevent);
             isMouseDown = true;
-            this.Text = "dpwm";
-
-          //  MessageBox.Show(this.Text);
-          //  this.Refresh();
         }
         
         protected override void OnMouseUp(MouseEventArgs mevent)
         {
             base.OnMouseUp(mevent);
             isMouseDown = false;
-            this.Text = "up";
-         //   MessageBox.Show(this.Text);
             this.Refresh();
 
         }

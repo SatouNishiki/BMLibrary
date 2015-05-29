@@ -40,7 +40,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(277, 74);
+            this.textBox1.Size = new System.Drawing.Size(200, 64);
             this.textBox1.TabIndex = 4;
             // 
             // timer1
@@ -50,10 +50,10 @@
             // customButton1
             // 
             this.customButton1.DefaultImgPass = "CustomCntrol.Picture.SampleButton.png";
-            this.customButton1.Location = new System.Drawing.Point(12, 94);
+            this.customButton1.Location = new System.Drawing.Point(12, 93);
             this.customButton1.MouseDawnImgPass = "CustomCntrol.Picture.SampleButton2.png";
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(277, 197);
+            this.customButton1.Size = new System.Drawing.Size(200, 150);
             this.customButton1.TabIndex = 5;
             this.customButton1.Text = "customButton1";
             this.customButton1.UseVisualStyleBackColor = true;
@@ -61,7 +61,7 @@
             // 
             // CustomControlDebugForm
             // 
-            this.ClientSize = new System.Drawing.Size(302, 303);
+            this.ClientSize = new System.Drawing.Size(224, 255);
             this.Controls.Add(this.customButton1);
             this.Controls.Add(this.textBox1);
             this.Name = "CustomControlDebugForm";

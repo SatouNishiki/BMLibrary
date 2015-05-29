@@ -24,6 +24,12 @@ namespace CustomControlDebugForm
             textBox1.Text = customButton1.Text;
         }
 
+        private void customButton1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+
+        }
+
         
     }
 }

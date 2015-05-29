@@ -82,7 +82,9 @@ namespace CustomCntrol
             base.OnMouseDown(mevent);
             isMouseDown = true;
             this.Text = "dpwm";
-            this.Refresh();
+
+          //  MessageBox.Show(this.Text);
+          //  this.Refresh();
         }
         
         protected override void OnMouseUp(MouseEventArgs mevent)
@@ -90,7 +92,9 @@ namespace CustomCntrol
             base.OnMouseUp(mevent);
             isMouseDown = false;
             this.Text = "up";
+         //   MessageBox.Show(this.Text);
             this.Refresh();
+
         }
     }
 }

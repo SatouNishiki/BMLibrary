@@ -55,8 +55,12 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Picture\" />
+    <EmbeddedResource Include="Picture\SampleButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Picture\SampleButton2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

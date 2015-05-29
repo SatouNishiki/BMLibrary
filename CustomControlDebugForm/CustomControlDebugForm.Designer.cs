@@ -37,14 +37,15 @@
             // 
             // customButton1
             // 
-            this.customButton1.DefaultImgPass = "CustomControlDebugForm.Picture.SampleButton.png";
-            this.customButton1.Location = new System.Drawing.Point(12, 93);
-            this.customButton1.MouseDawnImgPass = "CustomControlDebugForm.Picture.SampleButton2.png";
+            this.customButton1.DefaultImgPass = "CustomCntrol.Picture.SampleButton.png";
+            this.customButton1.Location = new System.Drawing.Point(45, 45);
+            this.customButton1.MouseDawnImgPass = "CustomCntrol.Picture.SampleButton2.png";
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(277, 175);
+            this.customButton1.Size = new System.Drawing.Size(431, 236);
             this.customButton1.TabIndex = 3;
             this.customButton1.Text = "customButton1";
             this.customButton1.UseVisualStyleBackColor = true;
+            this.customButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.customButton1_MouseDown);
             // 
             // textBox1
             // 
@@ -63,7 +64,7 @@
             // customButton2
             // 
             this.customButton2.DefaultImgPass = "CustomControlDebugForm.Picture.SampleButton.png";
-            this.customButton2.Location = new System.Drawing.Point(393, 69);
+            this.customButton2.Location = new System.Drawing.Point(395, 61);
             this.customButton2.MouseDawnImgPass = "CustomControlDebugForm.Picture.SampleButton2.png";
             this.customButton2.Name = "customButton2";
             this.customButton2.Size = new System.Drawing.Size(584, 117);

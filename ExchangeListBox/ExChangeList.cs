@@ -111,5 +111,24 @@ namespace ExchangeListBox
                 }
             }
         }
+
+        public void PerformIndexClick(int index)
+        {
+            this.OnClick(null);
+
+            // インデックスが取得できたら
+            if (index >= 0)
+            {
+                // すべての選択状態を解除してから
+                ClearSelected();
+
+                // アイテムを選択
+                SelectedIndex = index;
+
+                SelectedItem = Items[index];
+
+                ClearSelected();
+            }
+        }
     }
 }

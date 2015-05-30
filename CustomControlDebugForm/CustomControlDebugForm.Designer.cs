@@ -51,20 +51,19 @@
             // customButton1
             // 
             this.customButton1.DefaultImgPass = "CustomCntrol.Picture.SampleButton.png";
-            this.customButton1.Location = new System.Drawing.Point(13, 93);
+            this.customButton1.Location = new System.Drawing.Point(73, 123);
             this.customButton1.MouseDawnImgPass = "CustomCntrol.Picture.SampleButton2.png";
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(277, 175);
-            this.customButton1.TabIndex = 3;
+            this.customButton1.Size = new System.Drawing.Size(296, 127);
+            this.customButton1.TabIndex = 5;
             this.customButton1.Text = "customButton1";
             this.customButton1.UseVisualStyleBackColor = true;
-            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // CustomControlDebugForm
             // 
-            this.ClientSize = new System.Drawing.Size(302, 280);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(680, 280);
             this.Controls.Add(this.customButton1);
+            this.Controls.Add(this.textBox1);
             this.Name = "CustomControlDebugForm";
             this.Text = "DebugForm";
             this.ResumeLayout(false);
@@ -74,9 +73,9 @@
 
         #endregion
 
-        private CustomCntrol.CustomButton customButton1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer timer1;
+        private CustomCntrol.CustomButton customButton1;
 
 
 

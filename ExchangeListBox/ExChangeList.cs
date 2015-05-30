@@ -114,6 +114,8 @@ namespace ExchangeListBox
 
         public void PerformIndexClick(int index)
         {
+            SelectedIndex = index;
+
             this.OnClick(null);
 
             // インデックスが取得できたら

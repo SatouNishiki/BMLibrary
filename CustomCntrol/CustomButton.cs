@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace CustomCntrol
 {
+    /// <summary>
+    /// デフォルトコントロールボタンのクソ邪魔な枠線が無い、画像のみボタンを作成できるクラス
+    /// </summary>
     public partial class CustomButton : Button
     {
         private System.Reflection.Assembly myAssembly =
@@ -18,7 +21,7 @@ namespace CustomCntrol
         private bool isMouseDown;
 
         /// <summary>
-        /// クリックされていないときのボタンイメージ
+        /// クリックされていないときのボタンイメージがある場所
         /// </summary>
         [
         Category("表示"),
@@ -27,18 +30,19 @@ namespace CustomCntrol
         public string DefaultImgPass { get; set; }
 
         /// <summary>
-        /// クリックされているときのボタンイメージ
+        /// クリックされているときのボタンイメージがある場所
         /// </summary>
         [
         Category("表示"),
         Description("クリックされているときのボタンイメージの実行アセンブリからの相対パスです。")
         ]
-        public string MouseDawnImgPass { get; set; }
+        public string MouseDownImgPass { get; set; }
 
 
         public CustomButton()
         {
             InitializeComponent();
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
         }
 
         protected override void OnPaint(PaintEventArgs pe)
@@ -50,31 +54,26 @@ namespace CustomCntrol
             {
                 try
                 {
-                    img = new Bitmap(myAssembly.GetManifestResourceStream
-                            (DefaultImgPass));
+                    img = new Bitmap(Application.StartupPath + "\\" + DefaultImgPass);
 
                     pe.Graphics.DrawImage(img, 0, 0, this.Width, this.Height);
                     pe.Dispose();
                 }
                 catch (Exception ex)
                 {
-                    BMErrorLibrary.BMError.ErrorMessageOutput(ex.Message);
                 }
             }
             else
             {
                 try
                 {
-                    img = new Bitmap(myAssembly.GetManifestResourceStream
-                            (MouseDawnImgPass));
+                    img = new Bitmap(Application.StartupPath + "\\" + MouseDownImgPass);
 
                     pe.Graphics.DrawImage(img, 0, 0, this.Width, this.Height);
                     pe.Dispose();
                 }
                 catch (Exception ex)
                 {
-
-                    BMErrorLibrary.BMError.ErrorMessageOutput(ex.Message);
                 }
             }
         }
@@ -84,7 +83,7 @@ namespace CustomCntrol
             base.OnMouseDown(mevent);
             isMouseDown = true;
         }
-        
+
         protected override void OnMouseUp(MouseEventArgs mevent)
         {
             base.OnMouseUp(mevent);

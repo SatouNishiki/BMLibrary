@@ -13,6 +13,9 @@ namespace ExchangeListBox
 {
     public partial class ExChangeList : ListBox
     {
+
+        public bool IsEasyMemberChangeMode { get; set; }
+
         public ExChangeList()
         {
             InitializeComponent();
@@ -70,7 +73,7 @@ namespace ExchangeListBox
 
         private void ExChangeList_MouseUp(object sender, MouseEventArgs e)
         {
-            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            if (e.Button == System.Windows.Forms.MouseButtons.Left && !IsEasyMemberChangeMode)
             {
                 // マウス座標から選択すべきアイテムのインデックスを取得
                 int index = IndexFromPoint(e.Location);
@@ -89,7 +92,7 @@ namespace ExchangeListBox
                     ClearSelected();
                 }
             }
-            else if (e.Button == System.Windows.Forms.MouseButtons.Right)
+            else if (e.Button == System.Windows.Forms.MouseButtons.Right || (IsEasyMemberChangeMode && e.Button == System.Windows.Forms.MouseButtons.Left))
             {
                 // マウス座標から選択すべきアイテムのインデックスを取得
                 int index = IndexFromPoint(e.Location);

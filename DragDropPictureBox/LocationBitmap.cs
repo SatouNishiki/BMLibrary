@@ -37,6 +37,7 @@ namespace DragDropPictureBox
         {
             Graphics = b;
             Location = p;
+            CanMove = true;
         }
 
         public LocationBitmap CloneDeep()

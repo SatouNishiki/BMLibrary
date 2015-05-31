@@ -80,7 +80,7 @@ namespace DragDropPictureBox
                     SystemInformation.DragSize.Height);
 
                 //ドラッグとする移動範囲を超えたか調べる
-                if (!moveRect.Contains(e.X, e.Y))
+                if (!moveRect.Contains(e.X, e.Y) && GetLocationBitmapFromPoint(mouseDownPoint).CanMove)
                 {
                     //ドラッグの準備
                     DragDropBox ddb = (DragDropBox)sender;

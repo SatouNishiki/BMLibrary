@@ -21,10 +21,16 @@ namespace DragDropPictureBox
         /// </summary>
         public Point Location { get; set; }
 
+        /// <summary>
+        /// この画像を動かせるかどうか
+        /// </summary>
+        public bool CanMove { get; set; }
+
         public LocationBitmap()
         {
             Graphics = null; ;
             Location = new Point();
+            CanMove = true;
         }
 
         public LocationBitmap(Bitmap b, Point p)

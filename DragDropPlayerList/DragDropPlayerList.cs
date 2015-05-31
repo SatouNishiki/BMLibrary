@@ -47,7 +47,7 @@ namespace DandDPlayerList
             }
             catch (Exception)
             {
-                BMError.ErrorMessageOutput("移動元のListboxがDragDropPlayerと互換性がない恐れ");
+                BMError.ErrorMessageOutput("移動元のListboxがDragDropPlayerと互換性がない恐れ" , true);
             }
 
             //ドラッグ元のlistboxを格納
@@ -75,7 +75,7 @@ namespace DandDPlayerList
             }
             catch (Exception)
             {
-                BMError.ErrorMessageOutput("移動先のListboxがDragDropPlayerと互換性がない恐れ");
+                BMError.ErrorMessageOutput("移動先のListboxがDragDropPlayerと互換性がない恐れ", true);
             }
 
             //そのデータに記載されているチームと同じチームのリストにドラッグしているのか判定

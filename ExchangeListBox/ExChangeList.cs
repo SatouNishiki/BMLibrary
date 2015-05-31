@@ -25,7 +25,7 @@ namespace ExchangeListBox
         {
             if (listBox == null)
             {
-                BMError.ErrorMessageOutput("引数にオブジェクト参照が追加されていません");
+                BMError.ErrorMessageOutput("引数にオブジェクト参照が追加されていません", true);
                 return false;
             }
 
@@ -33,7 +33,7 @@ namespace ExchangeListBox
 
             if (this.SelectedItems.Count != listBox.SelectedItems.Count)
             {
-                BMError.ErrorMessageOutput("選択されているアイテムの個数が違います");
+                BMError.ErrorMessageOutput("選択されているアイテムの個数が違います", true);
                 return false;
             }
 
@@ -64,7 +64,7 @@ namespace ExchangeListBox
             }
             catch (Exception exc)
             {
-                BMError.ErrorMessageOutput(exc.Message);
+                BMError.ErrorMessageOutput(exc.Message, true);
                 return false;
             }
 

@@ -51,30 +51,33 @@ namespace BMErrorLibrary
             }
 
             Encoding sjisEnc = Encoding.GetEncoding("Shift_JIS");
-            StreamWriter writer = new StreamWriter(errorFileName, true, sjisEnc);
 
-            //一つ前のスタックを取得
-            StackFrame callerFrame = new StackFrame(1);
+            using (StreamWriter writer = new StreamWriter(errorFileName, true, sjisEnc))
+            using (TextWriter writerSync = TextWriter.Synchronized(writer))
+            {
 
-            //このメソッドの呼び出し元のメソッド名
-            string methodName = callerFrame.GetMethod().Name;
+                //一つ前のスタックを取得
+                StackFrame callerFrame = new StackFrame(1);
 
-            //このメソッドの呼び出し元のクラス名
-            string className = callerFrame.GetMethod().ReflectedType.FullName;
+                //このメソッドの呼び出し元のメソッド名
+                string methodName = callerFrame.GetMethod().Name;
 
-            //出力用のテキストを定義
-            //現在の日付、呼び出し元情報、エラーメッセージ(引数)をくっつけてエラー文とする
-            string outputString = "[" + DateTime.Now + "]" + "Class = " + className + " ,"
-                + "Method = " + methodName + " " + errorMessage + "\n";
+                //このメソッドの呼び出し元のクラス名
+                string className = callerFrame.GetMethod().ReflectedType.FullName;
 
-            if (showMessageBox)
-                MessageBox.Show(errorMessage);
+                //出力用のテキストを定義
+                //現在の日付、呼び出し元情報、エラーメッセージ(引数)をくっつけてエラー文とする
+                string outputString = "[" + DateTime.Now + "]" + "Class = " + className + " ,"
+                    + "Method = " + methodName + " " + errorMessage + "\n";
 
-            //ファイルに書き込み
-            writer.WriteLine(outputString);
-            writer.Close();
+                if (showMessageBox)
+                    MessageBox.Show(errorMessage);
+
+                //ファイルに書き込み
+             //   writer.WriteLine(outputString);
+                writerSync.WriteLine(outputString);
+
+            }
         }
-
-        
     }
 }

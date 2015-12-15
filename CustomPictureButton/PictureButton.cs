@@ -12,8 +12,13 @@ namespace CustomPictureButton
 {
     public partial class PictureButton : UserControl
     {
-        public Bitmap OffPicture { get; set; }
-        public Bitmap OnPicture { get; set; }
+        public Bitmap OffImage { get; set; }
+        public Bitmap OnImage { get; set; }
+        public Image DefaultImage
+        {
+            get { return pictureBox1.Image; }
+            set { pictureBox1.Image = value; }
+        }
 
         public PictureButton()
         {
@@ -22,9 +27,9 @@ namespace CustomPictureButton
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (OnPicture != null)
+            if (OnImage != null)
             {
-                this.pictureBox1.Image = OffPicture;
+                this.pictureBox1.Image = OnImage;
             }
             else
             {
@@ -34,9 +39,9 @@ namespace CustomPictureButton
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
-            if (this.OnPicture != null)
+            if (this.OffImage != null)
             {
-                this.pictureBox1.Image = OnPicture;
+                this.pictureBox1.Image = OffImage;
             }
             else
             {

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControlDebugForm", "CustomControlDebugForm\CustomControlDebugForm.csproj", "{29CF11F4-510A-40F0-98B5-A4B05A8B5C31}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeListBox", "ExchangeListBox\ExchangeListBox.csproj", "{023B3AC2-88FA-4E36-A799-145488651272}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCntrol", "CustomCntrol\CustomCntrol.csproj", "{C54F508A-C667-4062-980F-CAB34E4E1F6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomPictureButton", "CustomPictureButton\CustomPictureButton.csproj", "{8B2E6D00-1FC6-49F2-902D-2B6C4302C694}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{C54F508A-C667-4062-980F-CAB34E4E1F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C54F508A-C667-4062-980F-CAB34E4E1F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C54F508A-C667-4062-980F-CAB34E4E1F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2E6D00-1FC6-49F2-902D-2B6C4302C694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2E6D00-1FC6-49F2-902D-2B6C4302C694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2E6D00-1FC6-49F2-902D-2B6C4302C694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2E6D00-1FC6-49F2-902D-2B6C4302C694}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

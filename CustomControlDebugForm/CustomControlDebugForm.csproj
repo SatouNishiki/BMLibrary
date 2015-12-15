@@ -101,6 +101,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CustomPictureButton\CustomPictureButton.csproj">
+      <Project>{8B2E6D00-1FC6-49F2-902D-2B6C4302C694}</Project>
+      <Name>CustomPictureButton</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DragDropPictureBox\DragDropPictureBox.csproj">
       <Project>{D330F661-1B71-45A2-94DB-B55AFADBFB70}</Project>
       <Name>DragDropPictureBox</Name>

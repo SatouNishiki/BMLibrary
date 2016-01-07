@@ -12,14 +12,25 @@ namespace CustomPictureButton
 {
     public partial class PictureButton : UserControl
     {
-        public Bitmap OffImage { get; set; }
-        public Bitmap OnImage { get; set; }
-        public Image DefaultImage
-        {
-            get { return pictureBox1.Image; }
-            set { pictureBox1.Image = value; }
-        }
+        private Bitmap offpicture;
 
+        public Bitmap DefaultImage
+        {
+            get { return this.offpicture; }
+            set
+            {
+                this.offpicture = value;
+                this.pictureBox1.Image = value;
+            }
+
+        }
+        public Bitmap MouseDownImage { get; set; }
+        /* public Image DefaultImage
+         {
+             get { return pictureBox1.Image; }
+             set { pictureBox1.Image = value; }
+         }
+         */
         public PictureButton()
         {
             InitializeComponent();
@@ -27,9 +38,9 @@ namespace CustomPictureButton
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (OnImage != null)
+            if (MouseDownImage != null)
             {
-                this.pictureBox1.Image = OnImage;
+                this.pictureBox1.Image = MouseDownImage;
             }
             else
             {
@@ -39,9 +50,9 @@ namespace CustomPictureButton
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
-            if (this.OffImage != null)
+            if (DefaultImage != null)
             {
-                this.pictureBox1.Image = OffImage;
+                this.pictureBox1.Image = DefaultImage;
             }
             else
             {
@@ -49,10 +60,9 @@ namespace CustomPictureButton
             }
         }
 
-        private void PictureButton_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (this.OffImage != null)
-                this.pictureBox1.Image = this.OffImage;
+            this.OnClick(e);
         }
 
     }

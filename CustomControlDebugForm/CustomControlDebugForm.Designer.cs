@@ -64,11 +64,10 @@
             // 
             // pictureButton1
             // 
-            this.pictureButton1.DefaultImage = null;
-            this.pictureButton1.Location = new System.Drawing.Point(227, 306);
+            this.pictureButton1.Location = new System.Drawing.Point(521, 345);
             this.pictureButton1.Name = "pictureButton1";
-            this.pictureButton1.OffImage = global::CustomControlDebugForm.Properties.Resources.SampleButton;
-            this.pictureButton1.OnImage = global::CustomControlDebugForm.Properties.Resources.背景;
+            this.pictureButton1.DefaultImage = global::CustomControlDebugForm.Properties.Resources.SampleButton;
+            this.pictureButton1.MouseDownImage = global::CustomControlDebugForm.Properties.Resources.背景;
             this.pictureButton1.Size = new System.Drawing.Size(150, 150);
             this.pictureButton1.TabIndex = 6;
             // 

@@ -48,10 +48,19 @@
       <DependentUpon>PictureButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReversePictureButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReversePictureButton.Designer.cs">
+      <DependentUpon>ReversePictureButton.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="PictureButton.resx">
       <DependentUpon>PictureButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReversePictureButton.resx">
+      <DependentUpon>ReversePictureButton.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

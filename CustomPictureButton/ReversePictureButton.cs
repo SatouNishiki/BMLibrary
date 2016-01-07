@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CustomPictureButton
 {
-    public partial class PictureButton : UserControl
+    public partial class ReversePictureButton : UserControl
     {
         private Bitmap DefaultPicture;
 
@@ -24,23 +24,25 @@ namespace CustomPictureButton
             }
 
         }
-        public Bitmap MouseDownImage { get; set; }
-        /* public Image DefaultImage
-         {
-             get { return pictureBox1.Image; }
-             set { pictureBox1.Image = value; }
-         }
-         */
-        public PictureButton()
+        public Bitmap ReverseImage { get; set; }
+
+        public ReversePictureButton()
         {
             InitializeComponent();
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (MouseDownImage != null)
+            if (DefaultImage != null && ReverseImage != null)
             {
-                this.pictureBox1.Image = MouseDownImage;
+                if (this.pictureBox1.Image == DefaultImage)
+                {
+                    this.pictureBox1.Image = ReverseImage;
+                }
+                else
+                {
+                    this.pictureBox1.Image = DefaultImage;
+                }
             }
             else
             {
@@ -52,15 +54,6 @@ namespace CustomPictureButton
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
-            if (DefaultImage != null)
-            {
-                this.pictureBox1.Image = DefaultImage;
-            }
-            else
-            {
-                this.pictureBox1.Image = null;
-            }
-
             this.OnMouseUp(e);
         }
 

@@ -49,5 +49,11 @@ namespace CustomPictureButton
             }
         }
 
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            if (this.OffImage != null && this.pictureBox1.Image == null)
+                this.pictureBox1.Image = this.OffImage;
+        }
+
     }
 }

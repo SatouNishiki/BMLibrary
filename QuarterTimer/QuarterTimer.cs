@@ -248,6 +248,7 @@ namespace QuarterTimer
         {
             remainingTime = new TimeSpan(0, 10, 0);
             displayRemainingTime = new TimeSpan(0, 10, 0);
+            this.quarter = 1;
 
             this.Text = (displayRemainingTime.Minutes).ToString() + "." + (displayRemainingTime.Seconds).ToString();
 

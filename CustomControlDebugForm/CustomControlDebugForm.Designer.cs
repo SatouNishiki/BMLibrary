@@ -33,7 +33,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.customButton1 = new CustomCntrol.CustomButton();
             this.pictureButton1 = new CustomPictureButton.PictureButton();
-            this.pictureButton_Stretch1 = new CustomPictureButton.PictureButton_Stretch();
             this.SuspendLayout();
             // 
             // textBox1
@@ -71,22 +70,12 @@
             this.pictureButton1.Name = "pictureButton1";
             this.pictureButton1.Size = new System.Drawing.Size(150, 150);
             this.pictureButton1.TabIndex = 6;
-            // 
-            // pictureButton_Stretch1
-            // 
-            this.pictureButton_Stretch1.DefaultImage = global::CustomControlDebugForm.Properties.Resources.SampleButton;
-            this.pictureButton_Stretch1.Location = new System.Drawing.Point(174, 320);
-            this.pictureButton_Stretch1.MouseDownImage = global::CustomControlDebugForm.Properties.Resources.背景;
-            this.pictureButton_Stretch1.Name = "pictureButton_Stretch1";
-            this.pictureButton_Stretch1.Size = new System.Drawing.Size(150, 150);
-            this.pictureButton_Stretch1.TabIndex = 7;
-            // 
+
             // CustomControlDebugForm
             // 
             this.BackgroundImage = global::CustomControlDebugForm.Properties.Resources.背景;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(872, 690);
-            this.Controls.Add(this.pictureButton_Stretch1);
             this.Controls.Add(this.pictureButton1);
             this.Controls.Add(this.customButton1);
             this.Controls.Add(this.textBox1);
@@ -104,7 +93,6 @@
         private System.Windows.Forms.Timer timer1;
         private CustomCntrol.CustomButton customButton1;
         private CustomPictureButton.PictureButton pictureButton1;
-        private CustomPictureButton.PictureButton_Stretch pictureButton_Stretch1;
     }
 }
 

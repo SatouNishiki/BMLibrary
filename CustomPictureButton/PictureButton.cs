@@ -31,6 +31,12 @@ namespace CustomPictureButton
              set { pictureBox1.Image = value; }
          }
          */
+
+        public PictureBoxSizeMode SizeMode
+        {
+            get { return this.pictureBox1.SizeMode; }
+            set { this.pictureBox1.SizeMode = value; } }
+
         public PictureButton()
         {
             InitializeComponent();
@@ -40,7 +46,7 @@ namespace CustomPictureButton
         {
             if (MouseDownImage != null)
             {
-                this.pictureBox1.Image = MouseDownImage;
+                pictureBox1.Image = MouseDownImage;
             }
             else
             {
